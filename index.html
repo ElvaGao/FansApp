@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css" /> 
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <h1 class="mui-title">我的支付宝</h1>
+	    <span class="mui-icon mui-icon-refreshempty mui-pull-right"></span>
+	</header>
+	
+	<!--内容：开始-->
+	<div class="mui-content"></div> 
+	<!--内容：开始-->
+
+</body>
+<script type="text/javascript" src="js/mui.js" ></script>
+<script type="text/javascript" src="js/dongyi.js" ></script>
+<script type="text/javascript" src="js/app.js" ></script>
+<script>
+headerTap();//启用双击监听
+subPagesLoad("index_inner");//加载子页面
+/*
+ * 考虑是否需要刷新按钮（有下拉刷新，而且刷新会出现白屏。效果不理想。）
+ */
+dj.click(dj.className("mui-icon-refreshempty")[0],function(){//右上角点击刷新
+	var headerView = plus.webview.currentWebview().children()[0];
+	headerView.reload();
+})
+</script>
+</html>

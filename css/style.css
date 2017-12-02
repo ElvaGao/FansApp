@@ -1,0 +1,947 @@
+body{
+	font-size: 13px;
+}
+/*.mui-bar-nav~.margin-no-refresh{
+	padding-top:2px;
+}*/
+.mui-pull-bottom-pocket{
+	height: 0px;
+}
+.mui-poppicker-header .mui-btn{
+	background-color: #666699;
+	border-color: #666699;
+}
+.mui-poppicker-header .mui-poppicker-btn-cancel{
+	background-color: transparent;
+}
+/*.mui-scroll-wrapper,
+.mui-bar-nav~.mui-content{
+	border-top:3px solid #fff
+}*/
+.friends,
+.friends:enabled:active{
+	background-color: #f5843a;
+	border-color: #f5843a;
+	color: #fff;
+}
+.vip,
+.vip:enabled:active{
+    background-color: #ffb042;
+    border-color: #ffb042;
+    color: #a94300;
+}
+/*header*/
+.mui-bar{
+	background-color: #666699;
+	box-shadow: none;
+}
+.mui-bar .mui-icon{
+	color: #fff;
+	font-size: 26px;
+}
+.mui-bar .mui-title{
+	color: #fff;
+	font-size: 16px;
+	right: 10px;
+    left: 10px;
+}
+/*首页*/
+.login{/*未登陆*/
+	text-align: center;
+	background-color: #ccccff;
+	padding: 10px;
+	font-size: 0;
+	height: 56px;
+}
+.login-content{
+	width: auto;
+	margin: 0 auto;
+	display: inline-block;
+	overflow: hidden;
+}
+.login .mui-icon{
+	width:36px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background-color: #666699;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 46px;
+	padding-top: 3px;
+	overflow: hidden;
+	float: left;
+}
+.mui-icon-person-filled:before{
+	margin-left: -5px;
+}
+.login-text{
+	display: inline-block;
+	line-height: 36px;
+	margin-left: 10px;
+	font-size: 16px;
+	color: #666699;
+}
+.login-already{
+	display: none;
+}
+.login-already div{
+	float: left;
+	width: 50%;
+	line-height: 36px;
+	color: #666699;
+	font-size: 13px;
+}
+.login-already div:first-child{
+	border-right: 1px solid #fff;
+}
+.login-already span{
+	text-decoration: underline;
+	margin-left: 5px;
+}
+.fans-content{/*粉丝操作*/
+	/*background-color: #ccccff;*/
+	padding: 10px;
+	box-shadow: inset 0 0 2px #fff;
+}
+.fans{
+	overflow: hidden;
+}
+.fans div{
+	text-align: center;
+	width: 40%;
+	float: left;
+}
+.fans .fans-clear,
+.fans .fans-intro{
+	width: 30%;
+}
+.fans .mui-icon{
+	width: 50px;
+	height: 50px;
+	line-height: 49px;
+	margin-top: 25px;
+	text-align: center;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 30px;
+	box-shadow: 0 0 6px #000;
+	position: relative;
+}
+.fans .mui-icon-trash{
+	background-color: #f5843a;
+}
+.fans .mui-icon-personadd{
+	display: inline-block;
+	background-color: #fff63b;
+	float: none;
+	color: #a94300;
+}
+.fans .fans-add span{
+	position: absolute;
+	font-size: 16px;
+	top: 20px;
+	right: 10px;
+	line-height: 20px;
+}
+.fans .mui-icon-info{
+	background-color: #ff9d9d;
+}
+.fans .fans-add .mui-icon{
+	width: 90px;
+	height: 90px;
+	line-height: 80px;
+	font-size: 50px;
+	margin-top: 5px;
+}
+.fans .fans-add p{
+	margin-top: -28px;
+	position: relative;
+	color: #a94300;
+}
+.fans p{
+	margin-bottom: 0;
+	margin-top: 6px;
+	color: #666699;
+}
+.gender{
+	text-align: center;
+	margin-top: 10px;
+}
+.gender button,
+.gender button:enabled:active{
+	display: inline-block;
+	color: #666699;
+	border: 1px solid #666699;
+	border-radius: 3px;
+	padding: 0 20px;
+	line-height: 35px;
+	background-color: #efeff4;
+}
+/*邀请好友*/
+.share{
+	text-align: center;
+	background-color: #fff;
+	padding: 10px;
+	box-shadow: 0 2px 2px #acacac;
+	overflow: hidden;
+}
+.share h3{
+	font-size: 18px;
+	line-height: 30px;
+}
+.share h4{
+	font-size: 14px;
+	color: #f00;
+}
+.share p{
+	color: #000;
+}
+.share h3 span,
+.share p span{
+	color: #f00;
+}
+.share button{
+	border-radius: 5px;
+	padding: 10px 0;
+	line-height: 30px;
+	width: 48%;
+	float: left;
+	margin-bottom: 0;
+	height: 72px;
+	font-size: 16px;
+}
+.share button:last-child{
+	color: #650091;
+	background-color: #fff63b;
+	border-color: #fff63b;
+	float: right;
+}
+.vip{
+	color: #0099cc;
+	line-height: 30px;
+}
+.vip p{
+	color:#f00;
+	font-size: 12px;
+	margin: 0;
+	margin-top: 8px;
+	line-height: 12px;
+}
+/*边加粉边赚钱*/
+.fans-money{
+	margin-top: 10px;
+	text-align: center;
+	background-color: #fff;
+	padding: 15px 0 45px 0;
+}
+.list{
+	border-top: 2px solid #666699;
+	border-bottom: 2px solid #666699;
+	overflow: hidden;
+	margin-top: 10px;
+	padding: 15px 0;
+}
+.list div{
+	display: inline-block;
+	width: 50%;
+	float: left;
+	line-height: 20px;
+}
+.list h5{
+	color:#000;
+	line-height: 20px;
+}
+.list p{
+	color:#0099cc;
+	line-height: 20px;
+	margin: 0;
+}
+.shouru{
+	border-right: 1px solid #ccccff;
+}
+.invite-jiangli{
+	margin-top: 20px;
+	padding: 0 15px 10px 15px;
+}
+.invite-list,
+.invite-jiangli p{
+	text-align: left;
+}
+.list .mf-txt{
+	font-size: 26px;
+	display: inline-block;
+	line-height: 30px;
+}
+/*登陆弹窗提示*/
+.login-tips{
+	position: fixed;
+	width: 80%;
+	z-index: 999;
+	left: 10%;
+	top: 20%;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 12px 0 0 0;
+	overflow: hidden;
+	display: none;
+}
+.inner-backdrop{
+	position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.3);
+}
+#tc_mr{
+	display: block;
+}
+.login-tips h4{
+	line-height: 30px;
+}
+.login-tel-btn{
+	padding: 5px 0;
+	border-radius: 5px;
+	width: 86%;
+	margin: 0 auto;
+	background-color: #666699;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.login-tel-btn .mui-icon-extra{
+	font-size: 30px;
+	transform: scaleX(1.4);
+	padding-right: 55px;
+}
+.login-tel-btn span:last-child{
+	display: inline-block;
+	line-height: 32px;
+	position: absolute;
+	margin-left: -60px;
+	font-size: 15px;
+}
+.link-qq{
+	margin-top: 15px;
+	padding: 14px 0;
+	border-top: 1px solid #ccc;
+	background-color: #eee;
+}
+.link-qq span{
+	display: inline-block;
+}
+.link-qq img{
+	width: 16px;
+	float: left;
+	margin-right: 2px;
+}
+.link-qq-kefu{
+	color: #007aff;
+}
+/*登陆表单*/
+.login-form{
+	width: 90%;
+	margin: 0 auto;
+}
+.mui-input-group .mui-input-row:after{
+	left: 0;
+}
+.login-form .mui-icon{
+	font-family: Muiicons;
+}
+.login-form .mui-icon-extra{
+	font-family: MuiiconSpread;
+}
+.login-form > div{
+	border-left: 1px solid #e4e3e6;
+	border-right: 1px solid #e4e3e6;
+}
+.mui-input-row input{
+	font-size: 14px;
+}
+.mui-input-row label~.dxyam{
+	padding-right: 90px;
+}
+.yzm{
+	position: absolute;
+	right: 7px;
+	padding: 0 5px;
+	border-radius: 2px;
+	top: 7px;
+	border: 1px solid #666699;
+	background-color: #666699;
+	color: #fff;
+	font-size: 12px;
+	line-height: 24px;
+	width: 90px;
+}
+.yzm.active{
+	background-color: #ccc;
+	border-color: #ccc;
+}
+.mui-spinner{
+	width: 15px;
+	height: 15px;
+	display: none;
+	position: absolute;
+	left: 8px;
+	top: 4px;
+}
+.yzm.active .mui-spinner{
+	display: inline-block;
+}
+.yzm.active #hqyzm{
+	color: #333;
+	padding-left: 16px;
+}
+.mui-input-group .login-row{
+	height: auto;
+	border: none;
+}
+.mui-input-group:after,
+.mui-input-group .login-row:after{
+	content:none;
+}
+.mui-input-group .login-sub{
+	border: 1px solid #666699;
+	background-color: #666699;
+	border-radius: 3px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+#zc{
+	color: #f00;
+}
+#zc2{
+	display: block;
+	margin-bottom: 15px;
+	color: #f00;
+}
+.login-top-tips{
+	margin: 0;
+	font-size: 12px;
+	color: #f00;
+}
+/*温馨提示*/
+.txt{
+	padding: 0 20px;
+	font-size: 14px;
+	text-align: left;
+}
+.txt span{
+	color: #f00;
+}
+.txt-title{
+	margin-top: 15px;
+}
+.jh-sub{
+	background-color: #666699;
+	color: #fff;
+	margin-bottom: 15px;
+	border-color: #666699;
+	border-radius: 20px;
+	font-size: 16px;
+	padding: 5px 25px;
+}
+.txt-close{
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 35px;
+	color: #666;
+}
+/*登陆后的底部支付宝提现*/
+.alipay-bottom{
+	background-color: rgba(0,0,0,0.9);
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	z-index: 999;
+}
+.alipay-bottom div{
+	width: 70%;
+	float: left;
+	color: #fff;
+	line-height: 40px;
+}
+.alipay-bottom div span{
+	display: inline-block;
+	float: left;
+	line-height: 50px;
+	font-size: 15px;
+}
+.alipay-bottom div .mui-icon-extra{
+	line-height: 50px;
+	margin: 0 5px 0 10px;
+	font-size: 24px;
+}
+.my-money{
+	color: #f00;
+	text-decoration: underline;
+}
+.alipay-bottom button{
+	width: 30%;
+	background-color: #ff6500;
+	border: none;
+	display: inline-block;
+	line-height: 50px;
+	float: right;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+	color: #fff;
+	border-radius: 0;
+	font-size: 15px;
+}
+/*签到*/
+.mark-money span{
+	font-size: 20px;
+	color: #f00;
+	margin-right: 5px;
+	font-weight: bold;
+}
+.mark-progress-bar{
+	margin-top: 10px;
+}
+.mark-progress-bar span{
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	color: #fff;
+	border-radius: 13px;
+	text-align: center;
+	line-height: 26px;
+	background-color: #ccc;
+	margin-right: 10px;
+	position: relative;
+}
+.mark-progress-bar span:last-child{
+	margin-right: 0;
+}
+.mark-progress-bar .active{
+	background-color: #0062cc;
+}
+.mark-progress-bar span:not(:first-child):before{
+	content: '';
+	display: inline-block;
+	width: 15px;
+	height: 4px;
+	background-color: #ccc;
+	position: absolute;
+	top: 11px;
+    right: 25px;
+    z-index: -1;
+}
+.mark-progress-bar .active:not(:first-child):before{
+	background-color: #0062cc;
+}
+.mark-txt{
+	margin-top: 10px;
+	color: #000;
+}
+.mark-txt span{
+	color: #f00;
+	margin: 0 2px;
+}
+.mark-sub{
+	border-radius: 3px;
+	width: 92%;
+	font-size: 13px;
+	white-space: normal;
+	line-height: 26px;
+	padding: 15px 0;
+}
+.mark-sub span{
+	display: block;
+	font-size: 18px;
+}
+/*加粉教程*/
+.add-fans-title{
+	color: #f00;
+}
+.add-fans-list{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 10px;
+	text-align: left;
+}
+.add-fans-list li{
+	margin-bottom: 10px;
+}
+.add-fans-list span{
+	color: #f00;
+}
+.add-fans-btn{
+	width: 85%;
+	margin-top: 5px;
+	background-color: #0062cc;
+	color: #fff;
+	margin-bottom: 15px;
+	font-size: 18px;
+}
+/*加粉失败*/
+.add-fans-failed h4{
+	margin-bottom: 10px;
+}
+.add-fans-failed p{
+	text-align: left;
+	padding: 0 20px;
+	margin: 0;
+	color: #000;
+}
+.add-fans-failed div{
+	width: 90%;
+	margin: 15px auto;
+	overflow: hidden;
+}
+.add-fans-failed button{
+	width: 48%;
+	line-height: 30px;
+	font-size: 14px;
+	color: #fff;
+}
+.add-fans-failed button:first-child{
+	float: left;
+	background-color: #6641e2;
+	border-color: #6641e2;
+}
+.add-fans-failed button:last-child{
+	float: right;
+	background-color: #ff0000;
+	border-color: #ff0000;
+}
+/*会员充值*/
+.huiyuan div{
+	width: 90%;
+	margin: 15px auto;
+	padding: 5px 10px;
+	line-height: 25px;
+	border-radius: 3px;
+}
+.huiyuan div p{
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+.huiyuan div h5{
+	font-size: 16px;
+	font-weight: bold;
+}
+.tc_hycz_div{
+	border: 2px solid #666699;
+}
+.tc_hycz_div h5{
+	color: #666699;
+}
+.border-green{
+	border: 2px solid #1c8022;
+}
+.border-green h5{
+	color: #ccccff;
+}
+.border-blue{
+	border: 2px solid #d98888;
+}
+.border-blue h5{
+	color: #d98888;
+}
+.border-red{
+	border: 2px solid #c80000;
+}
+.border-red h5{
+	color: #c80000;
+}
+/*支付方式*/
+.pay div{
+	border-top: 1px solid #ccc;
+	width: 100%;
+	text-align: center;
+	margin: 10px 0 15px 0;
+}
+.pay div button{
+	margin: 0 auto;
+	margin-top: 15px;
+	padding: 0;
+	width: 80%;
+	line-height: 50px;
+	border-radius: 25px;
+}
+#tc_zffs_zfb{
+	background-color: #0099cc;
+	border-color: #0099cc;
+	color: #fff;
+}
+#tc_zffs_wx{
+	background-color: #666699;
+	border-color: #666699;
+	color: #fff;
+}
+
+
+/*使用说明*/
+.intro-title-list a{
+	font-size: 14px;
+}
+.intro-txt-list{
+	margin-top: 15px;
+	background-color: #fff;
+}
+.intro-txt-list h4{
+	background-color: #000;
+	color: #fff;
+}
+#top>.mui-table-view:first-child{
+	margin-top: 0;
+}
+.intro-title-list .mui-table-view-cell:after{
+	left: 0;
+}
+.intro-txt-list h4 span{
+	display: inline-block;
+	width:50px;
+	line-height: 50px;
+	color: #fff;
+	text-align: center;
+	background-color: #f00;
+	margin-right: 10px;
+}
+.intro-txt-list div:first-child{
+	height: 38px;
+	margin-top: -44px;	
+}
+.intro-txt-list p{
+	color: #000;
+}
+.intro-txt-list img{
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+.intro-txt-list:target{
+	position: relative;
+}
+.kefu-return{
+	width: 50px;
+	position: fixed;
+	right: 0;
+	bottom: 100px;
+}
+.kefu-return div,
+.kefu-return a{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	text-align: center;
+}
+.kefu{
+	background-color: #6641e2;
+	color: #fff;
+}
+.kefu span{
+	display: block;
+	margin-top: -8px;
+}
+.kefu img{
+	width: 45%;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+.kefu+a{
+	display: block;
+	margin-top: 10px;
+	background-color: #333;
+	color: #fff;
+	line-height: 50px;
+}
+/*收入明细*/
+.income-list{
+	overflow: hidden;
+	background-color: #fff;
+	margin-top: 0;
+	padding: 15px 10px;
+}
+.income-list div{
+	float: left;
+	width: 33.33%;
+	text-align: center;
+	border-right: 1px solid #e2e2e2;
+}
+.income-list div:last-child{
+	border-right: none;
+}
+.income-list h5{
+	font-size: 16px;
+	color: #000;
+}
+.income-list p{
+	color: #000;
+	margin-bottom: 0;
+	font-size: 14px;
+}
+.income-list .red{
+	color: #f00;
+}
+.mstx{
+	width: 92%;
+	box-sizing: border-box;
+	text-align: center;
+	margin: 15px auto;
+	color: #fff;
+	background-color: #0099cc;
+	border-color: #0099cc;
+}
+.jilu-list{
+	background-color: #fff;
+	padding: 15px 0;
+	margin-top:15px;
+}
+.jilu-tab{
+	width: 92%;
+	border: 2px solid #666699;
+	border-radius: 10px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.mui-segmented-control .mui-control-item{
+	width: 50%;
+	border-color: #666699;
+	color: #333;
+}
+.mui-segmented-control .mui-control-item.mui-active{
+	background-color: #666699;
+}
+.jilu-list li{
+	border-top: 1px solid #e2e2e2;
+	padding: 10px 4%;
+	overflow: hidden;
+}
+.jilu-list li:first-child{
+	border-top: none;
+}
+.jl-detail{
+	width: 70%;
+	float: left;
+}
+.jl-num{
+	width: 30%;
+	float: right;
+	text-align: center;
+	line-height: 80px;
+	font-size: 16px;
+	color: #f00;
+}
+.jl-detail h4{
+	font-size: 14px;
+	color: #0099cc;
+	line-height: 40px;
+}
+.jl-detail time{
+	margin-left: 5px;
+}
+.jilu-more{
+	line-height: 30px;
+	text-align: center;
+	margin-top: 10px;
+}
+.jl-detail-tips time{
+	margin-right: 5px;
+	line-height: 30px;
+}
+/*好友列表*/
+.invite-list div{
+	width: 50%;
+}
+.invite-list div p{
+	color: #f00;
+}
+/*提现*/
+.info h4{
+	color: #f00;
+}
+.info li{
+	line-height: 25px;
+}
+.cash-form label{
+	font-size: 14px;
+	color: #0062cc;
+	line-height: 30px;
+}
+.radio-num{
+	overflow: hidden;
+}
+.radio-num label{
+	display: block;
+	float: left;
+	width: 47%;
+	margin-left: 6%;
+	text-align: center;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	margin-top: 10px;
+	line-height: 40px;
+	color: #000;
+	font-size: 16px;
+	position: relative;
+}
+.radio-num label:nth-child(2),
+.radio-num label:nth-child(4){
+	margin-left: 0;
+}
+.radio-num label:nth-child(2){
+	border-color: #f00;
+}
+.cash-form{
+	background-color: inherit;
+}
+.cash-form:before{
+	content: none;
+}
+.cash-form .mui-input-row label{
+	padding: 0;
+	display: block;
+}
+.cash-form .mui-input-row{
+	height: auto;
+}
+.cash-form .mui-input-row label~input{
+	width: 100%;
+	border: 1px solid #e2e2e2;
+	background-color: #fff;
+	border-radius: 3px;
+	padding: 0 10px;
+}
+.cash-form .mui-input-row .mui-input-clear~.mui-icon-clear{
+	bottom: 0;
+	top: auto;
+	display: inline-block;
+	height: 30px;
+}
+.cash-form .mui-input-group:before,
+.cash-form .mui-input-row:after{
+	content: none;
+}
+.cash-form p{
+	margin: 15px 0;
+}
+.cash-form p span{
+	color: #f00;
+}
+.cash-form .cash-sub{
+	line-height: 36px;
+	font-size: 16px;
+	background-color: #aaa;
+	border-color: #aaa;
+}
+.cash-form .active{
+	background-color: #666699;
+	border:1px solid #666699;
+}
+.cash-link{
+	text-decoration: underline;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 10px;
+}

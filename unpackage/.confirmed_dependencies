@@ -1,0 +1,249 @@
+{
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/mui-icons-extra.ttf",
+			"images/kefuqq.png",
+			"css/icons-extra.css",
+			"js/mui.js",
+			"js/dongyi.js",
+			"js/script.js",
+			"index-refresh.html",
+			"js/refresh-main.js",
+			"js/header.js",
+			"index_inner.html",
+			"js/main-frame.js",
+			"js/app.js",
+			"js/mui.picker.js",
+			"js/mui.poppicker.js",
+			"css/mui.poppicker.css",
+			"css/mui.picker.css"
+		],
+		"refer": [
+			"index-refresh.html",
+			"index_inner.html",
+			"income_detail.html",
+			"invite.html",
+			"cash.html",
+			"introductions.html"
+		]
+	},
+	"index-refresh.html": {
+		"resources": [
+			"js/dongyi.js",
+			"js/script.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/mui.js",
+			"css/icons-extra.css",
+			"css/mui.poppicker.css",
+			"css/mui.picker.css",
+			"js/mui.min.js",
+			"fonts/mui-icons-extra.ttf",
+			"images/kefuqq.png",
+			"js/fresh-child.js",
+			"js/refresh-child.js",
+			"js/index.js",
+			"js/index-refresh.js"
+		]
+	},
+	"index_inner.html": {
+		"resources": [
+			"js/index-refresh.js",
+			"js/dongyi.js",
+			"fonts/mui-icons-extra.ttf",
+			"js/refresh-child.js",
+			"images/kefuqq.png",
+			"css/icons-extra.css",
+			"js/list.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/mui.js",
+			"js/index-inner.js",
+			"js/pull-refresh.js",
+			"js/index-inner-tc.js",
+			"js/script.js",
+			"js/index-inner-page.js",
+			"css/mui.poppicker.css",
+			"css/mui.picker.css",
+			"js/mui.picker.js",
+			"js/city.data-3.js",
+			"js/mui.poppicker.js",
+			"js/app.js"
+		],
+		"refer": [
+			"introductions.html",
+			"template.html",
+			"income_detail.html",
+			"invite.html",
+			"cash.html",
+			"income.html",
+			"friends.html"
+		]
+	},
+	"income_detail.html": {
+		"resources": [
+			"css/mui.min.css",
+			"css/style.css",
+			"js/dongyi.js",
+			"js/pull-refresh.js",
+			"js/script.js",
+			"js/header-back.js",
+			"js/mui.js",
+			"js/app.js",
+			"js/income_detail.js",
+			"fonts/mui.ttf"
+		],
+		"refer": [
+			"cash.html",
+			"template.html"
+		]
+	},
+	"cash.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/dongyi.js",
+			"js/script.js",
+			"js/header-back.js",
+			"js/mui.js",
+			"js/pull-refresh.js",
+			"js/app.js",
+			"js/income_detail.js",
+			"js/cash.js",
+			"cash.html"
+		],
+		"refer": [
+			"cash_list.html",
+			"cash.html",
+			"index.html",
+			"template.html"
+		]
+	},
+	"invite.html": {
+		"resources": [
+			"css/mui.min.css",
+			"css/style.css",
+			"js/dongyi.js",
+			"js/script.js",
+			"js/header-back.js",
+			"js/mui.js",
+			"js/pull-refresh.js",
+			"js/app.js",
+			"js/income_detail.js",
+			"fonts/mui.ttf"
+		]
+	},
+	"introductions.html": {
+		"resources": [
+			"js/dongyi.js",
+			"js/introductions.js",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/mui.js",
+			"images/kefuqq.png",
+			"js/script.js",
+			"js/header-back.js",
+			"fonts/mui.ttf",
+			"js/app.js"
+		]
+	},
+	"template.html": {
+		"resources": [
+			"introductions.html",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/mui.js",
+			"income_detail.html",
+			"cash.html",
+			"js/dongyi.js",
+			"js/script.js",
+			"js/header-back.js",
+			"js/main-frame.js",
+			"invite.html"
+		],
+		"refer": [
+			"income_detail.html",
+			"invite.html",
+			"cash.html",
+			"introductions.html",
+			"cash_list.html",
+			"index.html"
+		]
+	},
+	"cash_list.html": {
+		"resources": [
+			"js/dongyi.js",
+			"js/pull-refresh.js",
+			"js/app.js",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/mui.js",
+			"js/income_detail.js",
+			"js/cash.js",
+			"cl_inner.html",
+			"fonts/mui.ttf",
+			"cach_list_inner.html"
+		],
+		"refer": [
+			"cl_inner.html",
+			"cach_list_inner.html"
+		]
+	},
+	"income.html": {
+		"resources": [
+			"income_inner.html",
+			"js/dongyi.js",
+			"js/app.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/mui.js"
+		],
+		"refer": [
+			"income_inner.html"
+		]
+	},
+	"income_inner.html": {
+		"refer": [
+			"cash.html"
+		],
+		"resources": [
+			"js/dongyi.js",
+			"js/app.js",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/mui.js"
+		]
+	},
+	"friends.html": {
+		"resources": [
+			"friends_inner.html",
+			"js/dongyi.js",
+			"js/app.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/mui.js"
+		],
+		"refer": [
+			"friends_inner.html"
+		]
+	},
+	"friends_inner.html": {
+		"resources": [
+			"js/dongyi.js",
+			"js/app.js",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/mui.js"
+		]
+	}
+}

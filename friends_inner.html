@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<!--下拉容器：开始-->
+	<div class="mui-content mui-scroll-wrapper" id="pullrefresh">
+		<div class="mui-scroll">
+			
+			
+			<!--收入列表：开始-->
+		    <div class="mui-list-unstyled income-list invite-list">
+		    		<div>
+		    			<h5>1级好友（人）</h5>
+		    			<p>0</p>
+		    		</div>
+		    		<div>
+		    			<h5>2级好友（人）</h5>
+		    			<p>0</p>
+		    		</div>
+		    </div>
+		    <!--收入列表：结束-->
+		    <!--提现按钮：开始-->
+		    <!--<button class="mui-btn mui-btn-block mstx" id="matx">马上提现</button>-->
+		    <!--提现按钮：结束-->
+		    <!--记录列表：开始-->
+		    <div class="jilu-list">
+				<div class="mui-segmented-control jilu-tab" id="segmentedControl">
+					<a class="mui-control-item mui-active" href="#list_item1">1级好友</a>
+					<a class="mui-control-item" href="#list_item2">2级好友</a>
+				</div>
+				<ul class="mui-control-content mui-list-unstyled mui-active" id="list_item1">
+					<li>
+						<div class="jl-detail">
+							<h4>15668683683</h4>
+							<p>2016-08-22<time>14:53:34</time></p>
+						</div>
+						<div class="jl-num">+0.04元</div>
+					</li>
+					<li>
+						<div class="jl-detail">
+							<h4>15668683683</h4>
+							<p>2016-08-22<time>14:53:34</time></p>
+						</div>
+						<div class="jl-num">+0.04元</div>
+					</li>
+				</ul>
+				<ul class="mui-control-content mui-list-unstyled" id="list_item2">
+					<li>
+						<div class="jl-detail">
+							<h4>15668683683</h4>
+							<p>2016-08-22<time>14:53:34</time></p>
+						</div>
+						<div class="jl-num">+0.04元</div>
+					</li>
+					<li>
+						<div class="jl-detail">
+							<h4>15668683683</h4>
+							<p>2016-08-22<time>14:53:34</time></p>
+						</div>
+						<div class="jl-num">+0.04元</div>
+					</li>
+					<li>
+						<div class="jl-detail">
+							<h4>15668683683</h4>
+							<p>2016-08-22<time>14:53:34</time></p>
+						</div>
+						<div class="jl-num">+0.04元</div>
+					</li>
+				</ul>
+		    </div>
+		    <p class="jilu-more">没有更多记录了</p>
+		    <!--记录列表：结束-->
+		    
+	    
+		</div>
+	</div> 
+	<!--下拉容器：结束-->
+	
+	
+	<!--弹窗：开始-->
+    	<!--记录详情：开始-->
+	<div class="login-tips jl-detail-tips" id="tc_jlxq">
+		<span class="mui-icon mui-icon-closeempty mui-pull-right txt-close"></span>
+		<h4>记录详情</h4>
+		<p><time>2016-08-22</time>签到奖励</p>
+	</div>
+    	<!--记录详情：结束-->
+    <!--弹窗：结束-->
+</body>
+<script type="text/javascript" src="js/mui.js" ></script>
+<script type="text/javascript" src="js/dongyi.js" ></script>
+<script type="text/javascript" src="js/app.js" ></script><!--全局使用的函数-->
+<script>
+var mask_show = false;//遮罩状态
+
+//奖励细节弹窗
+mui.each(dj.tagName("li"),function(data){
+	dj.click(dj.tagName("li")[data],function(){
+		mask_show = tcOpen(mask_show);
+	})
+})
+
+//关闭按钮关闭弹窗
+dj.click(dj.className("txt-close")[0],function(){//增加点击事件
+	closeMaskBtn(mask_show);
+})
+</script>
+</html>

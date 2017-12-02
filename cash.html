@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body> 
+	<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" id="heeader_back"></a>
+	    <h1 class="mui-title" id="title">支付宝提现</h1>
+	    <span class="mui-icon mui-icon-refreshempty mui-pull-right"></span>
+	</header>
+	<!--内容：开始-->
+	<div class="mui-content mui-content-padded">
+		<div class="info">
+			<h4>提现说明：</h4>
+			<ul class="mui-list-unstyled">
+				<li>1、为防止作弊，邀请的好友当中，至少要有1位vip会员，才能提现！</li>
+				<li>2、提现申请将在1-3个工作日发放到您指定的支付宝账号内。</li>
+			</ul>
+		</div>
+		<form class="mui-input-group cash-form" action="javascript:return false;">
+			<div class="mui-input-row">
+				<label>您的支付宝</label>
+	        		<input type="text" class="mui-input-clear">
+			</div>
+			<div class="mui-input-row">
+				<label>您的姓名</label>
+	        		<input type="text" class="mui-input-clear">
+			</div>
+	        <div class="radio-num" id="radio_num">
+			    	<input type="hidden" value="10" id="cash_value">
+			    	<label class="radio" data="10">10元</label>
+			    	<label class="radio" data="50">50元</label>
+			    	<label class="radio" data="100">100元</label>
+			    	<label class="radio" data="all">全部</label>
+			</div>
+        		<p>账户余额：<span id="all">0.07</span>元</p>
+        		<input type="submit" value="确认提现" class="mui-btn mui-btn-block cash-sub active" id="cash_tx">
+		</form>
+		<p class="cash-link" id="cktxjl">查看提现记录</p>
+	</div>
+	<!--内容：结束-->
+</body>
+<script type="text/javascript" src="js/mui.js" ></script>
+<script type="text/javascript" src="js/dongyi.js" ></script>
+<script type="text/javascript" src="js/app.js" ></script><!--全局使用的函数-->
+<script>
+headerTap();//双击回到顶部
+//查看提现记录
+dj.click(dj.id("cktxjl"),function(){
+	openWindowNew("cash_list");
+})
+//确认提现-提现后返回的页面
+dj.click(dj.id("cash_tx"),function(){
+	openWindowNew("cash_list");
+})
+
+/*
+ * 提现的金额选择
+ */
+var value = 10;
+//给每一个label添加点击事件
+mui.each(dj.className("radio"),function(data){
+	dj.click(dj.className("radio")[data],function(){
+		mui.each(dj.className("radio"),function(dataA){
+			dj.className("radio")[dataA].style.borderColor = "#ccc";//恢复其他border颜色
+		})
+		dj.className("radio")[data].style.borderColor = "#f00";//修改border颜色
+		switch (data){//点击的值
+			case 0:
+				value = 10;
+				break;
+			case 1:
+				value = 50;
+				break;
+			case 2:
+				value = 100;
+				break;
+			case 3:
+				value = dj.id("all").innerHTML;
+				break;
+			default:
+				break;
+		}
+		dj.id("cash_value").value = value;//把值放到hidden的input里
+	})
+})
+dj.click(dj.className("mui-icon-refreshempty")[0],function(){//右上角点击刷新
+	var headerView = plus.webview.currentWebview();
+	headerView.reload();
+})
+</script>
+</html>

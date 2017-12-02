@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" id="heeader_back"></a>
+	    <h1 class="mui-title" id="title">收支明细</h1>
+	    <span class="mui-icon mui-icon-refreshempty mui-pull-right"></span>
+	</header>
+	<!--内容：开始-->
+	<div class="mui-content"></div> 
+	<!--内容：开始-->
+	
+</body>
+<script type="text/javascript" src="js/mui.js" ></script>
+<script type="text/javascript" src="js/dongyi.js" ></script>
+<script type="text/javascript" src="js/app.js" ></script><!--全局使用的函数-->
+<script>
+headerTap();//双击回到顶部
+subPagesLoad("income_inner")//加载子页面
+dj.click(dj.className("mui-icon-refreshempty")[0],function(){//右上角点击刷新
+	var headerView = plus.webview.currentWebview().children()[0];
+	headerView.reload();
+})
+</script>
+</html>

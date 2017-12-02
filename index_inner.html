@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css" /> 
+    <link rel="stylesheet" href="css/icons-extra.css" />
+    <link rel="stylesheet" type="text/css" href="css/mui.picker.css"/><!--底部选择框-->
+    <link rel="stylesheet" type="text/css" href="css/mui.poppicker.css"/><!--底部选择框-->
+</head>
+<body>
+	<!--下拉容器：开始-->
+	<div class="mui-content mui-scroll-wrapper" id="pullrefresh">
+		<div class="mui-scroll">
+			
+			
+		    <!--粉丝操作按钮：开始-->
+		    <div class="mui-content fans-content">
+		        <div class="fans">
+			    	<div class="fans-clear">
+			    		<span class="mui-icon mui-icon-trash"></span>
+			    		<p>清除记录</p>
+			    	</div>
+			    	<div class="fans-add">
+			    		<div class="mui-icon mui-icon-personadd" id="jf" data-href="tc_jfsb">
+			    			<span>50</span>
+			    		</div>
+			    		<p>支付</p>
+			    	</div>
+			    	<div class="fans-intro" id="sysm">
+			    		<span class="mui-icon mui-icon-info"></span>
+			    		<p>使用说明</p>
+			    	</div>
+			    </div>
+			    <div class="gender">
+			    	<button class="mui-btn" id="sex_loc">选择性别 选择地区</button>
+			    </div>
+		    </div>
+		    <!--粉丝操作按钮：结束-->
+		    <!--登录状态：开始-->
+		    <div class="login">
+		    		<!--未登录状态：开始-->
+			    	<a class="login-content" data-href="tc_yhdl" id="tc_btn_yhdl">
+			    		<span class="mui-icon mui-icon-person-filled"></span>
+			    		<span class="login-text">请登录</span>
+			    	</a>
+			    	<!--未登录状态：结束-->
+			    	<!--已登录状态：开始-->
+				<div class="login-already">
+			    		<div data-href="tc_wxts" id="tc_btn_wxts">156*****683<span id="login_already_zt">已暂停</span></div>
+		    			<div data-href="tc_qdsjjl" id="tc_btn_qdsjjl">签到领名额</div>
+		    		</div>	
+		    		<!--已登录状态：结束--> 
+		    </div>
+		    <!--登录状态：结束-->
+		    <!--邀请好友、开通VIP：开始-->
+		    <div class="share">
+			    	<h4>请先登录</h4><!--登陆前-->
+			    	<h3>您还有<span>0</span>个加粉名额</h4><!--登陆后-->
+			    	<p>每邀请1个好友，增加<span>100</span>个名额</p>
+			    	<button class="mui-btn mui-btn-block friends" id="share_yqhy">邀请好友</button>
+			    	<button class="mui-btn mui-btn-block vip mui-btn-blue" data-href="tc_hycz" id="tc_btn_hycz">我要开通VIP
+			    		<p>加粉无限制，超光速加粉</p>
+			    	</button>
+		    </div>
+		    <!--邀请好友、开通VIP：结束-->
+		    <!--边加粉边赚钱：开始-->
+		    <div class="fans-money">
+		    		<h4>边加粉边赚钱</h4>
+			    	<div class="list">
+			    		<div class="shouru">
+			    			<h5>累计获得收入</h5>
+			    			<p class="mf-txt">0.03</p>
+			    			<p id="shouru">收入明细<span class="mui-icon mui-icon-arrowthinright"></span></p>
+			    		</div>
+			    		<div class="haoyou">
+			    			<h5>累计邀请好友</h5>
+			    			<p class="mf-txt">0</p>
+			    			<p id="intive_jilu">邀请记录<span class="mui-icon mui-icon-arrowthinright"></span></p>
+			    		</div>
+			    	</div>
+		    		<!--邀请好友奖励：开始-->
+			    <div class="invite-jiangli">
+				    	<h4>邀请好友 三重奖</h5>
+			    		<ul class="mui-list-unstyled invite-list">
+			    			<li>1、名额奖励</li>
+			    			<li>2、现金奖励</li>
+			    			<li>3、提成奖励</li>
+			    		</ul>
+			    		<p>体现说明：为防止作弊，邀请的好友当中，至少要有1位会员，才能提现</p>
+			    </div>
+			    <!--邀请好友奖励：结束-->
+		    </div>
+		    <!--边加粉边赚钱：结束-->
+		    
+	
+		</div>
+	</div> 
+	<!--下拉容器：结束-->
+
+
+
+	
+	
+	<!--登陆后的底部支付宝提现：开始-->
+    <div class="alipay-bottom">
+    		<div>
+    			<span class="mui-icon-extra mui-icon-extra-gold"></span>
+    			<span>余额：</span>
+    			<span class="my-money" id="yu_e">0.03元</span>
+    		</div>
+    		<button id="alipay_cash">支付宝提现</button>
+    </div>
+    <!--登陆后的底部支付宝提现：结束-->
+	
+	
+	
+	<!--弹窗：开始-->
+	
+	<!--登陆提示弹窗：开始-->
+	<div class="inner-backdrop" id="inner-backdrop">
+		<div class="login-tips" id="tc_mr" data-href="tc_mr">
+			<span class="mui-icon mui-icon-closeempty mui-pull-right txt-close"></span>
+			<h4>请登录</h4>
+			<div class="login-tel-btn" data-href="tc_yhdl" id="tc_mr_dl">
+				<span class="mui-icon-extra mui-icon-extra-phone"></span>
+				<span>手机登录</span>
+			</div>
+			<span id="zc" data-href="tc_yhzc">还没注册？点此注册</span>
+			<div class="link-qq">
+				<span>登陆有问题？</span>
+				<span class="link-qq-kefu"><img src="images/kefuqq.png" />联系客服</span>
+			</div>
+		</div>
+	</div>
+	
+	<!--登陆提示弹窗：结束-->
+
+
+	<!--注册弹窗：开始-->
+	<div class="login-tips" id="tc_yhzc">
+		<span class="mui-icon mui-icon-closeempty mui-pull-right txt-close"></span>
+		<h4>用户注册</h4>
+		<p class="login-top-tips">验证码已发送，请您注意查收</p>
+		<form class="mui-input-group login-form" action="javascript:return false;">
+		    <div class="mui-input-row">
+		        <input type="text" class="mui-input-clear" placeholder="手机号">
+		    </div>
+		    <div class="mui-input-row">
+		        <input type="password" class="mui-input-password" placeholder="密码">
+			</div>
+		    <div class="mui-input-row">
+		        <input type="text" class="dxyam" placeholder="短信验证码" id="dxyam">
+		        <div class="yzm" id="yzm"><span class="mui-spinner" id="mui_spinner"></span><span id="hqyzm">获取验证码</span></div>
+		    </div>
+		    <div class="mui-input-row login-row">
+		    		<input type="submit" value="确认注册" class="mui-btn-block login-sub" id="yhzc_sub"/>
+		    </div>
+		</form>
+	</div>
+	<!--注册弹窗：结束-->
+	
+	
+	<!--登陆弹窗：开始-->
+	<div class="login-tips" id="tc_yhdl">
+		<span class="mui-icon mui-icon-closeempty mui-pull-right txt-close"></span>
+		<h4>用户登录</h4>
+		<form class="mui-input-group login-form" action="javascript:return false;">
+		    <div class="mui-input-row">
+		        <input type="text" class="mui-input-clear" placeholder="手机号">
+		    </div>
+		    <div class="mui-input-row">
+		        <input type="password" class="mui-input-password" placeholder="密码">
+			</div>
+		    <div class="mui-input-row login-row">
+		    		<input type="submit" value="确认登陆" class="mui-btn-block login-sub" id="yhdl_sub"/>
+		    </div>
+		    <span id="zc2" data-href="tc_yhzc">还没注册？点此注册</span>
+		</form>
+	</div>
+	<!--登陆弹窗：结束-->
+	
+
+	<!--温馨提示：开始-->
+	<div class="login-tips" id="tc_wxts">
+		<span class="mui-icon mui-icon-closeempty mui-pull-right txt-close"></span>
+		<h3 class="txt-title">温馨提示</h3>
+		<p class="txt">您已经暂停了加粉，如需继续使用请点击激活！<span>（注：暂停期间将不会有人加您）</span></p>
+		<button class="mui-btn jh-sub" id="tc_wxts_jh">点击激活</button>
+	</div>
+	<!--温馨提示：结束-->
+
+
+	<!--签到随机奖励：开始-->
+	<div class="login-tips" id="tc_qdsjjl">
+		<span class="mui-icon mui-icon-closeempty mui-pull-right txt-close"></span>
+		<h4>签到随机奖励</h4>
+		<div class="mark-money"><span>+0.04</span>元</div>
+		<div class="mark-progress-bar">
+			<span class="active">1</span>
+			<span class="active">2</span>
+			<span>3</span>
+			<span>4</span>
+			<span>5</span>
+		</div>
+		<p class="mark-txt">每累积签到<span>5</span>天，送<span>50</span>个加粉名额</p>
+		<button class="mui-btn jh-sub mark-sub" id="tc_qdtl" data-href="tc_hycz"><span>签到太累？</span>直接开通会员，加粉名额无限制</button>
+	</div>
+	<!--签到随机奖励：结束-->
+
+
+	<!--加粉教程：开始-->
+	<div class="login-tips" id="tc_jc">
+		<span class="mui-icon mui-icon-closeempty mui-pull-right txt-close"></span>
+		<div class="jc-1">
+			<h4 class="add-fans-title">首次加粉，简易教学（一）</h4>
+			<ul class="mui-list-unstyled add-fans-list">
+				<li>1、点击“加粉”后，系统将批量导入50个名额到您的手机通讯录。</li>
+				<li>2、打开社交APP，找到“通讯录>新的朋友>手机联系人”一个一个通过和添加。</li>
+				<li>3、加粉完成后，点击“清理”，倒入通讯里的数据将一键清除。</li>
+			</ul>
+			<button class="mui-btn login-sub add-fans-btn">下一步</button>
+		</div>
+		<div class="jc-2">
+			<h4 class="add-fans-title">首次加粉，简易教学（二）</h4>
+			<ul class="mui-list-unstyled add-fans-list">
+				<li>1、好的头像和昵称，能提升加粉效果。</li>
+				<li>2、您也可以开通VIP，加粉效果更快，更好。</li>
+				<li>3、点击“开始加粉”，请在弹出的选项里，选择<span>“好”</span>或<span>“允许”</span>。</li>
+			</ul>
+			<button class="mui-btn login-sub add-fans-btn">开始加粉</button>
+		</div>
+	</div>
+	<!--加粉教程：结束-->
+
+
+	<!--加粉失败：开始-->
+	<div class="login-tips add-fans-failed" id="tc_jfsb">
+		<span class="mui-icon mui-icon-closeempty mui-pull-right txt-close"></span>
+		<h4>加粉名额不足</h4>
+		<p>每邀请1个好友安装，增加100个加粉名额。</p>
+		<p>您也可以开通VIP，加粉无限制！</p>
+		<div>
+			<button id="shre_yq">立即邀请好友</button><button id="kthy">我要开通VIP</button>
+		</div>
+	</div>
+	<!--加粉失败：结束-->
+
+
+	<!--会员充值：开始-->
+	<div class="login-tips huiyuan" id="tc_hycz">
+		<span class="mui-icon mui-icon-closeempty mui-pull-right txt-close"></span>
+		<h4>请选择会员类型</h4>
+		<div class="tc_hycz_div" id="hy_first" data-href="tc_zffs">
+			<h5>体验2天被动加粉（30元）</h5>
+			<p>体验被动加粉、光速加粉的效果</p>
+		</div>
+		<div class="tc_hycz_div border-blue" id="hy_second" data-href="tc_zffs">
+			<h5>VIP（99元/年）</h5>
+			<p>加粉名额无限制，可筛选加粉</p>
+		</div>
+		<div class="tc_hycz_div border-red" id="hy_third" data-href="tc_zffs">
+			<h5>钻石VIP（388元/30天）</h5>
+			<p>永久VIP+30天被动加粉，光速加粉</p>
+		</div>
+	</div>
+	<!--会员充值：结束-->
+
+
+	<!--会员充值：开始-->
+	<div class="login-tips pay" id="tc_zffs">
+		<span class="mui-icon mui-icon-closeempty mui-pull-right txt-close"></span>
+		<h4>请选择支付方式</h4>
+		<div>
+			<button class="mui-btn mui-btn-block pay-zfb" id="tc_zffs_zfb">支付宝付款</button>
+			<button class="mui-btn mui-btn-block pay-wx" id="tc_zffs_wx">微信付款</button>
+		</div>
+	</div>
+	<!--会员充值：结束-->
+
+    <!--弹窗：结束-->
+</body>
+<script type="text/javascript" src="js/mui.js" ></script>
+<script type="text/javascript" src="js/dongyi.js" ></script>
+<script type="text/javascript" src="js/app.js" ></script><!--全局使用的函数-->
+<!--<script type="text/javascript" src="js/city.data.js" ></script>--><!--省市及联：二级－视情况去留-->
+<script type="text/javascript" src="js/city.data-3.js" ></script><!--省市及联：三级－视情况去留-->
+<script type="text/javascript" src="js/mui.picker.js" ></script><!--底部选择框-->
+<script type="text/javascript" src="js/mui.poppicker.js" ></script><!--底部选择框-->
+<script type="text/javascript" src="js/index-inner.js" ></script><!--首页－内嵌页面-->
+</html>
